@@ -9,9 +9,26 @@ def main():
     driver = webdriver.Chrome(options)
 
     data = get_stats(driver)
+    shouldCreateTweet = False
+
+    try:
+        file = open("lastGameScraped.txt", "r")
+        date = file.readline()
+        if date != data["date"]:
+            shouldCreateTweet = True
+            file = open("lastGameScraped.txt", "w")
+            file.write(data["date"])
+            file.close()
+    except:
+        shouldCreateTweet = True
+        file = open("lastGameScraped.txt", "w")
+        file.write(data["date"])
+        file.close()
+
     driver.quit()
 
-    create_tweet(data)
+    if shouldCreateTweet:
+        create_tweet(data)
 
 
 main()

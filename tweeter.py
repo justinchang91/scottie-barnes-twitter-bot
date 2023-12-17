@@ -66,7 +66,7 @@ def create_tweet(data):
     minutes = "minute" if int(data["minutes"]) == 1 else "minutes"
 
     initial_text = f"Scottie Barnes in a Raptors {game_status} against the {team_legend[opponent]}:\n\n"
-    body_text = f'{data["points"]} {points} ({data["fgm"]}/{data["fga"]} FG)\n{data["rebounds"]} {rebounds}\n{data["assists"]} {assists}\n{data["steals"]} {steals}\n{data["blocks"]} {blocks}\n{data["three_p_m"]}/{data["three_p_a"]} 3PM\n{data["ftm"]}/{data["fta"]} FT\n{data["turnovers"]} {turnovers}\n\n'
+    body_text = f'{data["points"]} {points} ({data["fgm"]}/{data["fga"]} FG, {data["three_p_m"]}/{data["three_p_a"]} 3PM, {data["ftm"]}/{data["fta"]} FT)\n{data["rebounds"]} {rebounds}\n{data["assists"]} {assists}\n{data["steals"]} {steals}\n{data["blocks"]} {blocks}\n{data["turnovers"]} {turnovers}\n\n'
     end_text = f'{plus_minus}{data["plus_minus"]} in {data["minutes"]} {minutes}.'
 
     tweet_text = initial_text + body_text + end_text
