@@ -6,7 +6,7 @@ def get_stats(driver):
 
     date = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[1]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[1]',
     ).text
     match_up = driver.find_element(
         By.XPATH,
@@ -26,11 +26,11 @@ def get_stats(driver):
     ).text
     fgm = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[6]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[6]',
     ).text
     fga = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[7]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[7]',
     ).text
     fg_percent = driver.find_element(
         By.XPATH,
@@ -38,11 +38,11 @@ def get_stats(driver):
     ).text
     three_p_m = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[9]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[9]',
     ).text
     three_p_a = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[10]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[10]',
     ).text
     three_p_percent = driver.find_element(
         By.XPATH,
@@ -62,31 +62,31 @@ def get_stats(driver):
     ).text
     o_rebounds = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[15]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[15]',
     ).text
     d_rebounds = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[16]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[16]',
     ).text
     rebounds = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[17]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[17]',
     ).text
     assists = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[18]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[18]',
     ).text
     steals = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[19]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[19]',
     ).text
     blocks = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[20]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[20]',
     ).text
     turnovers = driver.find_element(
         By.XPATH,
-        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[21]/a',
+        '//*[@id="__next"]/div[2]/div[2]/section/div[4]/section[2]/div/div/div/table/tbody/tr[1]/td[21]',
     ).text
     personal_fouls = driver.find_element(
         By.XPATH,
