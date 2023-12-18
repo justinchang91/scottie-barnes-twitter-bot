@@ -13,17 +13,12 @@ def main():
 
     try:
         file = open("lastGameScraped.txt", "r")
-        date = file.readline()
-        if (
-            date != data["date"]
-            and "win_loss" in data
-            and (data["win_loss"] == "W" or data["win_loss"] == "L")
-        ):
-            shouldCreateTweet = True
-            file = open("lastGameScraped.txt", "w")
-            file.write(data["date"])
-            file.close()
+        prev_date = file.readline()
+        file.close()
     except:
+        prev_date = ""
+
+    if prev_date != data["date"] and "win_loss" in data and data["win_loss"] != "":
         shouldCreateTweet = True
         file = open("lastGameScraped.txt", "w")
         file.write(data["date"])
